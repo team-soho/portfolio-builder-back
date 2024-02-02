@@ -29,5 +29,15 @@ export default async (app) => {
         return a.split('.')[0] - b.split('.')[0];
       },
     },
+    customSiteTitle: 'portfolio builder api',
+    customfavIcon: '/static/favicon.ico',
+    //customfavIcon: 'https://cdn.jsdelivr.net/npm/swagger-ui-dist@3.25.0/favicon-32x32.png',
+    customJs: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.2/swagger-ui-bundle.js',
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.2/swagger-ui-standalone-preset.min.js',
+    ],
+    customCssUrl: [
+      'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.2/swagger-ui.min.css',
+    ],
   });
 };
