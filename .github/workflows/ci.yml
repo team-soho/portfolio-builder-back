@@ -1,0 +1,16 @@
+name: 'CI'
+on:
+  pull_request:
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install --global yarn                       # install packages
+      - run: yarn install
+      - run: yarn test:report
+      - uses: actions/upload-artifact@v3  # upload test results
+        if: success() || failure()        # run this step even if previous step failed
+        with:
+          name: test-results
+          path: jest-junit.xml
