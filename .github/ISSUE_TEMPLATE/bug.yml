@@ -1,4 +1,5 @@
-name: Bug Report myself
+name: Bug Report
+description:  Bug Report myself
 title: "[Bug]: "
 labels: ["💣 bug"]
 projects: []
