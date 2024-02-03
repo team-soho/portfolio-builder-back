@@ -1,0 +1,26 @@
+name: Enhancement
+title: "[Enhancement]: "
+labels: ["🕹 enhancement"]
+projects: []
+assignees:
+  - ruccess
+body:
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: Briefly describe the current state of the existing feature or product.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-enhancement
+    attributes:
+      label: Proposed Enhancement
+      description: Provide a detailed description of the specific improvement you are suggesting.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information or context related to the feature.

@@ -1,0 +1,19 @@
+name: Feature Request
+title: "[Feature]: "
+labels: ["🎉 feature"]
+projects: []
+assignees:
+  - ruccess
+body:
+  - type: textarea
+    id: new-feature
+    attributes:
+      label: Description of the New Feature
+      placeholder: Provide a brief description of the new feature.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Provide any additional information or context related to the feature.
