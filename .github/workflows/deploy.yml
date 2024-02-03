@@ -10,16 +10,11 @@ jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - run: npm install --global yarn
+      - run: yarn install
+      - run: yarn build
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
-      - name: "Echo values"
-        run: |
-          echo $VERCEL_PROJECT_ID
-          echo $VERCEL_TOKEN
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-      - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
       - name: Deploy Project Artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
