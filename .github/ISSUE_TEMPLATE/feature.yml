@@ -10,10 +10,12 @@ body:
     attributes:
       label: Description of the New Feature
       placeholder: Provide a brief description of the new feature.
+      description: Provide a brief description of the new feature.
     validations:
       required: true
   - type: textarea
     id: additional-information
     attributes:
       label: Additional Information
+      placeholder: Provide a brief description of the new feature.
       description: Provide any additional information or context related to the feature.
