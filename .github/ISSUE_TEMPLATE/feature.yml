@@ -1,8 +1,7 @@
 name: Feature Request
-description: Feature
+description: write new Feature
 title: "[Feature]: "
 labels: ["🎉 feature"]
-projects: []
 assignees:
   - ruccess
 body:
@@ -10,7 +9,6 @@ body:
     id: new-feature
     attributes:
       label: Description of the New Feature
-      placeholder: Provide a brief description of the new feature.
       description: Provide a brief description of the new feature.
     validations:
       required: true
@@ -18,5 +16,4 @@ body:
     id: additional-information
     attributes:
       label: Additional Information
-      placeholder: Provide a brief description of the new feature.
       description: Provide any additional information or context related to the feature.
