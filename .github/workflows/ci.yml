@@ -12,5 +12,5 @@ jobs:
       - uses: actions/upload-artifact@v3  # upload test results
         if: success() || failure()        # run this step even if previous step failed
         with:
-          name: reports/test-results
-          path: jest-junit.xml
+          name: test-results
+          path: reports/jest-junit.xml
