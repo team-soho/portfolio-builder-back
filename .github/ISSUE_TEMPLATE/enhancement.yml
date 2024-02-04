@@ -1,8 +1,7 @@
 name: Enhancement
-description: Enhancement
+description: write Enhancement or improvement
 title: "[Enhancement]: "
 labels: ["🕹 enhancement"]
-projects: []
 assignees:
   - ruccess
 body:
