@@ -37,4 +37,4 @@ lerna-debug.log*
 
 .vercel/
 /reports/*
-!/test/
+test/*
