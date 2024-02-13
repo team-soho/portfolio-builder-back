@@ -1,73 +1,86 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Portfolio Builder Project (Work in Progress)
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Introduction
+Craft your professional portfolio website without any coding required! Portfolio Builder offers an easy-to-use interface, theme customization, and seamless deployment on GitHub Pages.
+## Demo
+Check out the live demo of Portfolio Builder: [Portfolio Builder Demo](https://ruccess.site)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## How to Deploy Your Portfolio
 
-## Description
+1. **Select a Theme:**
+    - Visit the Portfolio Builder website and Pick a theme that suits your style
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+2. **Input Your Information:**
+    - input your personal information, work experience, and portfolio details.
+
+3. **Download Your Portfolio:**
+    - Download the dynamically generated static files in a zip format.
+
+4. **Deploy on GitHub Pages:**
+    - Follow the detailed instructions below to create your own website using the 'Deployment (Using GitHub Pages)' section.
+
+## Key Features
+- Easy input of personal information, work experience, and portfolio details
+- Dynamic generation of static HTML, CSS, and JS files
+- Variety of themes to choose from
+- Seamless deployment on GitHub Pages
+- Portfolio data is stored in JSON format and included in the downloaded zip file.( Even if you're unfamiliar with JSON, don't worry! It's just a file to store information, and in this project, we don't keep or store it.)
+
+## Development Status
+
+The project is currently under development, and some parts may not be complete. Feedback and the development progress can be tracked through issues.
+
+## Development Environment
+
+- Frontend: [portfolio-builder-front](frontend project link) (Developer: yuuthod, Tech Stack: Next.js)
+- Backend: [portfolio-builder-back](https://github.com/ruccess/portfolio-builder-backk) (Developer: ruccess)
+
+## Deployment (Using GitHub Pages)
+
+1. **Create a Project Repository:**
+    - Click the "+" button on GitHub and select "New repository."
+    - Specify the repository name and choose the option to create a README file.
+
+2. **Upload the Project:**
+    - Navigate to the local project folder.
+    - Initialize the project with Git and link it to the GitHub Repository.
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin <GitHub Repository URL>
+   git push -u origin master
+   ```
+3. **Configure GitHub Pages:**
+   - Go to the "Settings" tab on the GitHub Repository page.
+   - Scroll down to the "GitHub Pages" section, choose "Source," and configure it.
+   - Typically, select "master branch" or "main branch" and save.
+4. **Check the Website:**
+   - After configuring GitHub Pages, the deployed website can be checked after a few minutes.
+   - The address is the GitHub Pages URL, including the specified repository name.
 
 ## Installation
 
-```bash
-$ yarn install
-```
+- ```bash
+    $ yarn install
+    ```
 
 ## Running the app
 
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
+-   ```bash
+    # watch mode
+    $ yarn run start:dev
+    ```
 
 ## Test
 
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+-   ```bash
+    # unit tests
+    $ yarn run test
+    
+    # e2e tests
+    $ yarn run test:e2e
+    
+    # test coverage
+    $ yarn run test:cov
+    ```
