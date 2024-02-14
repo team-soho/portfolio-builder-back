@@ -1,7 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsArray, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
-import { v4 as uuidv4 } from 'uuid';
 
 interface Item {
   readonly id: string;
