@@ -38,3 +38,9 @@ lerna-debug.log*
 .vercel/
 /reports/*
 test/*
+
+
+# temporary
+/src/htmlMaker/*
+commander.js
+/json/*

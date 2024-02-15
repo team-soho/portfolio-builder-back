@@ -8,9 +8,9 @@ import {
   Delete,
 } from '@nestjs/common';
 import { InfoService } from './info.service';
-import { CreateInfoDto } from './dto/create-info.dto';
 import { UpdateInfoDto } from './dto/update-info.dto';
 import { ApiBody, ApiOperation, ApiQuery } from '@nestjs/swagger';
+import { CreateInfoDto } from './dto/create-info.dto';
 
 @Controller('info')
 export class InfoController {
@@ -19,7 +19,6 @@ export class InfoController {
   @Post()
   @ApiOperation({
     summary: 'info 추가',
-    description: 'info 수정',
   })
   @ApiBody({
     type: CreateInfoDto,
@@ -35,16 +34,12 @@ export class InfoController {
   @ApiQuery({ name: 'key', description: 'json | data', enum: ['json', 'data'] })
   @Get(':key')
   findAll(@Param('key') key: string): CreateInfoDto {
-    console.log(CreateInfoDto);
-    console.log(
-      <CreateInfoDto>this.infoService.findAll(key) instanceof CreateInfoDto,
-    );
     return this.infoService.findAll(key);
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.infoService.findOne(+id);
+  @Get()
+  findOne() {
+    return ``;
   }
 
   @Patch(':id')
