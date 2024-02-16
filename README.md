@@ -34,8 +34,8 @@ The project is currently under development, and some parts may not be complete. 
 
   <img src="https://static.ruccess.site/team-soho.svg" />
 
-- Frontend: [portfolio-builder-front](https://github.com/team-soho/portfolio-builder-front) (Developer: [yuuthod](https://https://github.com/yuuthod) )
-- Backend: [portfolio-builder-back](https://github.com/team-soho/portfolio-builder-back) (Developer: [ruccess](https://https://github.com/ruccess) )
+- Frontend: [portfolio-builder-front](https://github.com/team-soho/portfolio-builder-front) (Developer: [yuuthod](https://github.com/yuuthod) )
+- Backend: [portfolio-builder-back](https://github.com/team-soho/portfolio-builder-back) (Developer: [ruccess](https://github.com/ruccess) )
 
 
   
