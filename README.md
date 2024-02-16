@@ -32,9 +32,13 @@ The project is currently under development, and some parts may not be complete. 
 
 ## Development Environment
 
-- Frontend: [portfolio-builder-front](frontend project link) (Developer: yuuthod, Tech Stack: Next.js)
-- Backend: [portfolio-builder-back](https://github.com/ruccess/portfolio-builder-backk) (Developer: ruccess)
+  <img src="https://static.ruccess.site/team-soho.svg" />
 
+- Frontend: [portfolio-builder-front](https://github.com/team-soho/portfolio-builder-front) (Developer: [yuuthod](https://https://github.com/yuuthod) )
+- Backend: [portfolio-builder-back](https://github.com/team-soho/portfolio-builder-back) (Developer: [ruccess](https://https://github.com/ruccess) )
+
+
+  
 ## Deployment (Using GitHub Pages)
 
 1. **Create a Project Repository:**
