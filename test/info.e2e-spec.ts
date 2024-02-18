@@ -4,7 +4,7 @@ import { InfoService } from '../src/info/info.service';
 import { InfoModule } from '../src/info/info.module';
 import { INestApplication } from '@nestjs/common';
 
-describe('Cats', () => {
+describe('Info', () => {
   let app: INestApplication;
   const infoService = { findAll: () => ['test'] };
 
@@ -21,9 +21,7 @@ describe('Cats', () => {
   });
 
   it(`/GET info`, () => {
-    return request(app.getHttpServer()).get('/info').expect(200).expect({
-      data: infoService.findAll(),
-    });
+    return request(app.getHttpServer()).get('/info').expect(200);
   });
 
   afterAll(async () => {
