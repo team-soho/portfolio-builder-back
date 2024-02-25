@@ -6,6 +6,7 @@ import { ConfigModule } from '@nestjs/config';
 import { join } from 'path';
 import { InfoModule } from './info/info.module';
 import configuration from './config/configuration';
+import { DownloadModule } from './download/download.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import configuration from './config/configuration';
       load: [configuration],
     }),
     InfoModule,
+    DownloadModule,
   ],
   controllers: [AppController],
   providers: [AppService],
