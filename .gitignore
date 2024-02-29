@@ -38,8 +38,14 @@ lerna-debug.log*
 .vercel/
 /reports/*
 
+#coverage
+/test/coverage
+
 
 # temporary
 /src/htmlMaker/*
 commander.js
 /json/*
+
+static/*
+archived/*
